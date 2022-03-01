@@ -1,0 +1,18 @@
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e5e5e5;
+  padding: 3px;
+}
+
+.header-container__logo {
+  height: 40px;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.header-container__title {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=Header.css.map */
