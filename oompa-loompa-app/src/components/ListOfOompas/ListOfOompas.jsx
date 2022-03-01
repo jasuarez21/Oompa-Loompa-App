@@ -23,6 +23,10 @@ const ListOfOompas = () => {
                 <img src="https://s3.eu-central-1.amazonaws.com/napptilus/level-test/imgs/ic_search.png" alt="Search oompa" className="body-container__input-container--logo" />
             </button>
         </div>
+        <div className="body-container__info-text">
+            <h2>Find your Oompa-Loompa</h2>
+            <p>There are more than 100K</p>
+        </div>
         <div className="body-container__oompas-list-container">
             { 
                 arrayOfOompas = oompas?.results?.filter((oompa) => oompa.first_name.toLowerCase().includes(searchOompa.toLowerCase()) || oompa.last_name.toLowerCase().includes(searchOompa.toLowerCase()) || oompa.profession.toLowerCase().includes(searchOompa.toLowerCase())),

@@ -20,6 +20,7 @@
 .body-container__input-container--input {
   height: 30px;
   width: 200px;
+  border-radius: 5px;
 }
 
 .body-container__input-container--logo {
@@ -33,5 +34,10 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.body-container__info-text {
+  font-size: large;
+  text-align: center;
 }
 /*# sourceMappingURL=ListOfOompas.css.map */

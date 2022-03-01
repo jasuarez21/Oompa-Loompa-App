@@ -8,6 +8,7 @@
         &--input {
             height: 30px;
             width: 200px;
+            border-radius: 5px;
         }
         &--logo{
             width: 20px;
@@ -17,5 +18,9 @@
     &__oompas-list-container {
         display: flex;
         flex-wrap: wrap;
+    }
+    &__info-text{
+        font-size: large;
+        text-align: center;
     }
 }
