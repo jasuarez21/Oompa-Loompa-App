@@ -6,6 +6,12 @@
         height: 400px;
     }
 }
-.oompa-detail-info{
-    margin-left: 10px;
+.oompa-detail{
+    &-info{
+        margin-left: 10px;
+        &__subinfo{
+            font-size: 12px;
+            color: grey;
+        }
+    }
 }

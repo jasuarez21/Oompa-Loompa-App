@@ -16,8 +16,8 @@ const DetailOfOompa = () => {
        <img src={`${oompa.image}`} alt={`${oompa.first_name} ${oompa.last_name}`} className='oompa-detail-container__image' />
        <div className='oompa-detail-info'>
           <h3>{oompa.first_name} {oompa.last_name}</h3>
-          <p>{oompa.gender === 'M' ? 'Man' : 'Women'}</p>
-          <p>{oompa.profession}</p>
+          <p className='oompa-detail-info__subinfo'>{oompa.gender === 'M' ? 'Man' : 'Women'}</p>
+          <p className='oompa-detail-info__subinfo'>{oompa.profession}</p>
           <p>{oompa.quota}</p>
        </div>
     </section>
