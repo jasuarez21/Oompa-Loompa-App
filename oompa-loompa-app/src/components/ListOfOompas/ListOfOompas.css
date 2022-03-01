@@ -18,13 +18,30 @@
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 2px;
 }
 
 .body-container__input-container--input {
-  height: 30px;
-  width: 200px;
   border-radius: 5px;
-  margin-top: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.body-container__input-container--input:focus {
+  outline: none;
+}
+
+.body-container__input-container--button {
+  border: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-left: 1px solid #ced4da;
+  height: 23px;
+  background-color: white;
 }
 
 .body-container__input-container--logo {

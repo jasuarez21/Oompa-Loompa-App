@@ -12,14 +12,11 @@ const ListOfOompas = () => {
     useEffect(() => {
       dispatch(loadOompas());
     }, []);
-    const oompaSearched = () => {
-        setSearchOompa()
-    } 
   return (
       <section className="body-container">
         <div className="body-container__input-container">
-            <input type="text" className="body-container__input-container--input" name="" id="" placeholder="Inserte el oompa que busca aquí"  onChange={e => setSearchOompa(e.target.value)} />
-            <button onClick={() => oompaSearched()}>
+            <input type="text" className="body-container__input-container--input" name="" id="" placeholder="Search"  onChange={e => setSearchOompa(e.target.value)} />
+            <button className="body-container__input-container--button">
                 <img src="https://s3.eu-central-1.amazonaws.com/napptilus/level-test/imgs/ic_search.png" alt="Search oompa" className="body-container__input-container--logo" />
             </button>
         </div>
@@ -28,8 +25,13 @@ const ListOfOompas = () => {
             <p>There are more than 100K</p>
         </div>
         <div className="body-container__oompas-list-container">
-            { 
-                arrayOfOompas = oompas?.results?.filter((oompa) => oompa.first_name.toLowerCase().includes(searchOompa.toLowerCase()) || oompa.last_name.toLowerCase().includes(searchOompa.toLowerCase()) || oompa.profession.toLowerCase().includes(searchOompa.toLowerCase())),
+            {   
+                arrayOfOompas = oompas?.results?.filter(
+                    (oompa) => 
+                        oompa.first_name.toLowerCase().includes(searchOompa.toLowerCase()) ||
+                        oompa.last_name.toLowerCase().includes(searchOompa.toLowerCase()) ||
+                        oompa.profession.toLowerCase().includes(searchOompa.toLowerCase())
+                ),
                 arrayOfOompas?.map((oompa) => <OompaTarget oompa={oompa} key={`${oompa.id}`} />) 
             } 
         </div>
