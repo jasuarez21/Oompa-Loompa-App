@@ -4,6 +4,8 @@
   display: flex;
   background-color: #e5e5e5;
   padding: 3px;
+  text-decoration: none;
+  color: black;
 }
 
 .header-container__logo {

@@ -1,6 +1,17 @@
 .oompa-container {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
     &__image{
         width: 230px;
         height: 200px;
     }
+    &__name {
+        font-weight: bolder;
+        font-size: large;
+    }
+}
+
+.oompa-container:hover {
+    color: blue;
 }

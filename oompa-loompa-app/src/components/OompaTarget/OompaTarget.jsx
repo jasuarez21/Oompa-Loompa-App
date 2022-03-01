@@ -6,7 +6,7 @@ export const OompaTarget = ( {oompa} ) => {
   return (
     <Link className="oompa-container" to={`${oompa.id}`}>
       <img src={`${oompa.image}`} alt={`${oompa.first_name} ${oompa.last_name}`} className="oompa-container__image" />
-      <p>{oompa.first_name} {oompa.last_name}</p>
+      <p className = "oompa-container__name">{oompa.first_name} {oompa.last_name}</p>
       <p>{oompa.gender === 'M' ? 'Man' : 'Women'}</p>
       <p>{oompa.profession}</p>
     </Link>

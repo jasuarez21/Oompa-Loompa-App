@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import {
-  BrowserRouter, Routes, Route
+  Router, Routes, Route
 } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { DetailOfOompa } from './components/DetailOfOompa/DetailOfOompa'
@@ -11,14 +11,13 @@ import configureStore from './redux/store';
 function App() {
   return (
     <Provider store={configureStore()}>
-      <BrowserRouter>
+      <Router>
         <Header />
-        <ListOfOompas />
         <Routes>
           <Route path="/list" component={ListOfOompas} />
           <Route path="/:id" component={DetailOfOompa} />
         </Routes>
-      </BrowserRouter>
+      </Router>
    </Provider>
   );
 }

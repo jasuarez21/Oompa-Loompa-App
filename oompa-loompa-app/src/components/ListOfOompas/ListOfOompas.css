@@ -1,7 +1,37 @@
-.oompas-list-container {
+.body-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body-container__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 20px;
+}
+
+.body-container__input-container--input {
+  height: 30px;
+  width: 200px;
+}
+
+.body-container__input-container--logo {
+  width: 20px;
+  height: 20px;
+}
+
+.body-container__oompas-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=ListOfOompas.css.map */
