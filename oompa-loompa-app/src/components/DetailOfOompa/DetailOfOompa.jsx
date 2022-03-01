@@ -18,7 +18,7 @@ const DetailOfOompa = () => {
           <h3>{oompa.first_name} {oompa.last_name}</h3>
           <p className='oompa-detail-info__subinfo'>{oompa.gender === 'M' ? 'Man' : 'Women'}</p>
           <p className='oompa-detail-info__subinfo'>{oompa.profession}</p>
-          <p>{oompa.quota}</p>
+          <div dangerouslySetInnerHTML={{ __html: oompa.description }} />
        </div>
     </section>
   )
