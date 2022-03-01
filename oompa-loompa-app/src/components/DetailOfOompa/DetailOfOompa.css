@@ -1,0 +1,16 @@
+.oompa-detail-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px;
+}
+
+.oompa-detail-container__image {
+  width: 600px;
+  height: 400px;
+}
+
+.oompa-detail-info {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=DetailOfOompa.css.map */

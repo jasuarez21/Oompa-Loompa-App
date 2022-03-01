@@ -25,7 +25,7 @@ const ListOfOompas = () => {
         </div>
         <div className="body-container__oompas-list-container">
             { 
-                arrayOfOompas = oompas?.results?.filter((oompa) => oompa.first_name.includes(searchOompa) || oompa.last_name.includes(searchOompa) || oompa.profession.includes(searchOompa)),
+                arrayOfOompas = oompas?.results?.filter((oompa) => oompa.first_name.toLowerCase().includes(searchOompa.toLowerCase()) || oompa.last_name.toLowerCase().includes(searchOompa.toLowerCase()) || oompa.profession.toLowerCase().includes(searchOompa.toLowerCase())),
                 arrayOfOompas?.map((oompa) => <OompaTarget oompa={oompa} key={`${oompa.id}`} />) 
             } 
         </div>
