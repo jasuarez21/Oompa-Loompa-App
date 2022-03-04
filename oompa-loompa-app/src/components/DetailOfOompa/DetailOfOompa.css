@@ -3,11 +3,13 @@
   display: -ms-flexbox;
   display: flex;
   margin: 40px;
+  width: 90%;
+  justify-items: center;
 }
 
 .oompa-detail-container__image {
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
 }
 
 .oompa-detail-info {

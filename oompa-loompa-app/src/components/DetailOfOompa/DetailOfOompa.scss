@@ -1,9 +1,11 @@
 .oompa-detail-container {
     display: flex;
     margin: 40px;
+    width: 90%;
+    justify-items: center;
     &__image{
-        width: 600px;
-        height: 400px;
+        width: 700px;
+        height: 500px;
     }
 }
 .oompa-detail{
